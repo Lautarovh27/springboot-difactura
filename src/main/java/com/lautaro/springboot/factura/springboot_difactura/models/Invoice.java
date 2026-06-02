@@ -2,6 +2,7 @@ package com.lautaro.springboot.factura.springboot_difactura.models;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -11,10 +12,11 @@ public class Invoice {
     @Autowired
     private Client client;
 
-    @Value("${invoice.description}")
+    @Value("${invoice.description.office}")
     private String description;
 
     @Autowired
+    @Qualifier("default")
     private List<Item> items;
 
     public Client getClient() {
