@@ -10,7 +10,7 @@ import com.lautaro.springboot.factura.springboot_difactura.models.Item;
 import com.lautaro.springboot.factura.springboot_difactura.models.Product;
 
 @Configuration
-@PropertySource("classpath:data.properties")
+@PropertySource(value = "classpath:data.properties", encoding = "UTF-8")
 public class AppConfig {
 
     @Bean

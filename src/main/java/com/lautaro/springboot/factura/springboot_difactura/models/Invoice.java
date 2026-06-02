@@ -35,4 +35,12 @@ public class Invoice {
     public void setItems(List<Item> items) {
         this.items = items;
     }
+
+    public int getTotal(){
+        int total = 0;
+        for (Item item : items) {
+            total += item.getImporte();
+        }
+        return total;
+    }
 }
