@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
 import com.lautaro.springboot.factura.springboot_difactura.models.Item;
 import com.lautaro.springboot.factura.springboot_difactura.models.Product;

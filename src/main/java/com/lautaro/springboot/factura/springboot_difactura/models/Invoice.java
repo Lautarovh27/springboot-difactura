@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import jakarta.annotation.PostConstruct;
+
 @Component
 public class Invoice {
     
@@ -18,6 +20,12 @@ public class Invoice {
     @Autowired
     @Qualifier("default")
     private List<Item> items;
+
+    @PostConstruct
+    public void init(){
+        client.setName(client.getName().toUpperCase());
+        description = description + " del cliente: " + client.getName() + " " + client.getLastname();   
+    }
 
     public Client getClient() {
         return client;
