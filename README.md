@@ -39,19 +39,6 @@ Invoice
 └── total
 ```
 
-## Cómo ejecutar
-
-```bash
-git clone https://github.com/Lautarovh27/spring-boot-invoice-system.git
-cd spring-boot-invoice-system
-./mvnw spring-boot:run
-```
-
-La app corre en `http://localhost:8080`. Probá el endpoint con Postman o desde el navegador:
-
-```
-GET http://localhost:8080/invoices/show
-```
 
 ## Autor
 
