@@ -12,7 +12,7 @@ import jakarta.annotation.PreDestroy;
 
 @Component
 @RequestScope
-@JsonIgnoreProperties({"advisors", "targetSource"})
+//@JsonIgnoreProperties({"advisors", "targetSource"})
 public class Invoice {
     
     @Autowired
